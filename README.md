@@ -79,6 +79,29 @@ path|TEXT|file path
 input_pw|TEXT|password
 options|TEXT|combination of ``flatten``, ``need_appearances``
 
+* The components has helper functions to construct ``fdf`` or ``xfdf``
+
+Both are Unicode aware, but it seems the filled form values on Mac Preview only appear when the user clicks the field (or re-saves the document as PDF).
+
+* make_fdf
+
+```
+C_OBJECT($params)
+
+ARRAY OBJECT($fields;3)
+OB SET($fields{1};"name";"Name_Last";"value";"miyako")
+OB SET($fields{2};"name";"Name_First";"value";"keisuke")
+OB SET ARRAY($params;"fields";$fields)
+
+$fdf:=make_fdf ($params)
+
+$pdf:=pdftk_fill_form ($params;$fdf)
+$path:=System folder(Desktop)+"fill_form.pdf"
+BLOB TO DOCUMENT($path;$pdf)
+```
+
+* make_xfdf
+
 ```
 C_OBJECT($params)
 
