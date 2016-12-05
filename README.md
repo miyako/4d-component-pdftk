@@ -24,6 +24,7 @@ encrypt|TEXT|``40bit`` or ``128bit`` (default)
 owner_pw|TEXT|owner password
 user_pw|TEXT|user password
 allow|TEXT|combination of ``printing``, ``degradedprinting``, ``modifycontents``, ``assembly``, ``copycontents``, ``screenreaders``, ``modifyannotations``, ``fillin``, ``allfeatures``
+options|TEXT|combination of ``flatten``, ``need_appearances``, ``compress``, ``uncompress``, ``keep_first_id``, ``keep_final_id``, ``drop_xfa``
 
 * properties for ``in``
 
