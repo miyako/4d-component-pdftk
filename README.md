@@ -80,16 +80,6 @@ input_pw|TEXT|password
 options|TEXT|combination of ``flatten``, ``need_appearances``
 
 ```
-$fdf:=sample_xfdf 
-
-$pdf:=pdftk_fill_form ($params;$fdf)
-$path:=System folder(Desktop)+"fill_form.pdf"
-BLOB TO DOCUMENT($path;$pdf)
-```
-
-utility to create basic ``xfdf```
-
-```
 C_OBJECT($params)
 
 ARRAY OBJECT($fields;3)
@@ -97,5 +87,10 @@ OB SET($fields{1};"name";"Name_Last";"value";"miyako")
 OB SET($fields{2};"name";"Name_First";"value";"keisuke")
 OB SET ARRAY($params;"fields";$fields)
 
-$0:=make_xfdf ($params)
+$fdf:=make_xfdf ($params)
+
+$pdf:=pdftk_fill_form ($params;$fdf)
+$path:=System folder(Desktop)+"fill_form.pdf"
+BLOB TO DOCUMENT($path;$pdf)
 ```
+
