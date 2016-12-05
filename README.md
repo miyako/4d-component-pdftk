@@ -40,8 +40,8 @@ C_OBJECT($params)
 
   //input PDF files
 ARRAY OBJECT($in;2)
-OB SET($in{1};"path";$path;"range";"1";"input_pw";"pass")
-OB SET($in{2};"path";$path;"range";"1";"input_pw";"pass")
+OB SET($in{1};"path";$path;"range";"1")
+OB SET($in{2};"path";$path;"range";"1east")
 OB SET ARRAY($params;"in";$in)
 
   //encrypt_40bit | encrypt_128bit
