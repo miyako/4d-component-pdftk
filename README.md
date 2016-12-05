@@ -45,10 +45,15 @@ OB SET($in{2};"path";$path;"range";"1east")
 OB SET ARRAY($params;"in";$in)
 
   //encrypt_40bit | encrypt_128bit
-OB SET($params;"encrypt";"128bit";\
-"owner_pw";"ownerpass";\
-"user_pw";"userpass";\
+OB SET($params;\
+"encrypt";"128bit";\
+"owner_pw";"opass";\
+"user_pw";"upass";\
 "allow";"printing,fillin")
+
+  //other options
+OB SET($params;\
+"options";"flatten,need_appearances,compress,keep_first_id,drop_xfa")
 
 $pdf:=pdftk_cat ($params)
 
