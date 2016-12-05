@@ -30,7 +30,7 @@ allow|TEXT|combination of ``printing``, ``degradedprinting``, ``modifycontents``
 property|type|description
 ------------|------------|----
 path|TEXT|file path
-range|TEXT|range
+range|TEXT|range, qualifier, rotation
 input_pw|TEXT|password
 
 ```
