@@ -32,3 +32,25 @@ property|type|description
 path|TEXT|file path
 range|TEXT|range
 input_pw|TEXT|password
+
+```
+$path:=Get 4D folder(Current resources folder)+"sample.pdf"
+
+C_OBJECT($params)
+
+  //input PDF files
+ARRAY OBJECT($in;2)
+OB SET($in{1};"path";$path;"range";"1";"input_pw";"pass")
+OB SET($in{2};"path";$path;"range";"1";"input_pw";"pass")
+OB SET ARRAY($params;"in";$in)
+
+  //encrypt_40bit | encrypt_128bit
+OB SET($params;"encrypt";"128bit";\
+"owner_pw";"ownerpass";\
+"user_pw";"userpass";\
+"allow";"printing,fillin")
+
+$pdf:=pdftk_cat ($params)
+
+BLOB TO DOCUMENT(System folder(Desktop)+"cat.pdf";$pdf)
+```
