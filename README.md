@@ -83,7 +83,7 @@ options|TEXT|combination of ``flatten``, ``need_appearances``
 
 Both are Unicode aware, but it seems the filled form values on Mac Preview only appear when the user clicks the field (or re-saves the document as PDF).
 
-* make_fdf
+* pdftk_make_fdf
 
 ```
 C_OBJECT($params)
@@ -93,14 +93,14 @@ OB SET($fields{1};"name";"Name_Last";"value";"miyako")
 OB SET($fields{2};"name";"Name_First";"value";"keisuke")
 OB SET ARRAY($params;"fields";$fields)
 
-$fdf:=make_fdf ($params)
+$fdf:=pdftk_make_fdf ($params)
 
 $pdf:=pdftk_fill_form ($params;$fdf)
 $path:=System folder(Desktop)+"fill_form.pdf"
 BLOB TO DOCUMENT($path;$pdf)
 ```
 
-* make_xfdf
+* pdftk_make_xfdf
 
 ```
 C_OBJECT($params)
@@ -110,7 +110,7 @@ OB SET($fields{1};"name";"Name_Last";"value";"miyako")
 OB SET($fields{2};"name";"Name_First";"value";"keisuke")
 OB SET ARRAY($params;"fields";$fields)
 
-$fdf:=make_xfdf ($params)
+$fdf:=pdftk_make_xfdf ($params)
 
 $pdf:=pdftk_fill_form ($params;$fdf)
 $path:=System folder(Desktop)+"fill_form.pdf"
