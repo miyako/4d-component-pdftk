@@ -4,7 +4,7 @@
 updated for El Capitan:
 
 c.f
-* http://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
+* https://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
 * https://qiita.com/keitasumiya/items/83756caf2865291707fb
 
 
