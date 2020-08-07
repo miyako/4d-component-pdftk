@@ -1,7 +1,13 @@
 # 4d-component-pdftk
 4D component of [pdftk](https://www.pdflabs.com/tools/pdftk-server/)
 
-updated for El Capitan see http://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
+updated for El Capitan:
+
+c.f
+* http://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
+* https://qiita.com/keitasumiya/items/83756caf2865291707fb
+
+
 
 Examples
 ---
