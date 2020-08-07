@@ -1,8 +1,20 @@
 # 4d-component-pdftk
 4D component of [pdftk](https://www.pdflabs.com/tools/pdftk-server/)
 
-updated for El Capitan see http://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
+updated for El Capitan:
 
+c.f
+* https://stackoverflow.com/questions/32505951/pdftk-server-on-os-x-10-11
+* https://qiita.com/keitasumiya/items/83756caf2865291707fb
+
+As of 2020-08-07, the [download link for Mac](https://www.pdflabs.com/tools/pdftk-server/) is 
+
+https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.6-setup.pkg
+
+but there is an alternative for El Capitan
+
+https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg
+ 
 Examples
 ---
 
